@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="javascript">
+var flag1=0,flag2=0;
+function character()
+{
+if(flag1==0)
+{document.getElementById("chars").innerHTML="<a href=\"ross.html\" target=\"display\"><div>ROSS</div></a><br><a href=\"rachel.html\" target=\"display\"><div>RACHEL</div></a><br><a href=\"joey.html\" target=\"display\"><div>JOEY</div></a><br><a href=\"pheobe.html\" target=\"display\"><div>PHEOBE</div></a><br><a href=\"chandler.html\" target=\"display\"><div>CHANDLER</div></a><br><a href=\"monica.html\" target=\"display\"><div>MONICA</div></a>"
+flag1=1;
+}
+else
+{
+document.getElementById("chars").innerHTML="";
+flag1=0;
+}
+}
+function seasonselect()
+{
+if(flag2==0)
+{document.getElementById("seasons").innerHTML="<a href=\"seasons.html\" target=\"display\"><div>SEASON 1</div></a><br><a href=\"season2.html\" target=\"display\"><div>SEASON 2</div></a><br><a href=\"season3.html\" target=\"display\"><div>SEASON 3</div></a><br><a href=\"season4.html\" target=\"display\"><div>SEASON 4</div></a><br><a href=\"season5.html\" target=\"display\"><div>SEASON 5</div></a><br><a href=\"season6.html\" target=\"display\"><div>SEASON 6</div></a><br><a href=\"season7.html\" target=\"display\"><div>SEASON 7</div></a><br><a href=\"season8.html\" target=\"display\"><div>SEASON 8</div></a><br><a href=\"season9.html\" target=\"display\"><div>SEASON 9</div></a><br><a href=\"season10.html\" target=\"display\"><div>SEASON 10</div></a>"
+flag2=1;
+}
+else
+{
+document.getElementById("seasons").innerHTML="";
+flag2=0;
+}
+}
+</script>
+<style>
+body{
+background-color:black;
+color:white;
+text-align:center;
+}
+div{
+border-style:solid;
+border-color:aqua;
+border-width:3px;
+border-radius:20px;
+background-color:black;
+}
+a{
+font-size:30px;
+font-weight:bold;
+text-decoration:none;
+}
+a:link{
+color:yellow;
+}
+a:visited{
+color:yellow;
+}
+a:hover{
+color:red;
+}
+a:active{
+color:red;
+}
+h1{
+color:aqua;
+font-size:40px;
+}
+div:hover{
+border-width:3px;
+background-color:yellow;
+}
+
+</style>
+</head>
+<body>
+<h1>MENU</h1>
+<a href="friendsabout.html" target="display"><div>ABOUT</div></a>
+<br>
+<a href="ross.html" target="display" onclick="character()"><div>CHARACTERS</div></a>
+<div id="chars" style="background-color:black;"></div>
+<br>
+<a href="seasons.html" onclick="seasonselect()" target="display"><div>SEASONS</div></a>
+<div id="seasons" style="background-color:black"></div>
+<br>
+<a href="funfacts.html" target="display"><div>FUN FACTS</div></a><br>
+<a href="friendsquiz.html" target="display"><div>QUIZ</div></a>
+<br>
+
+</body>
+</html>
